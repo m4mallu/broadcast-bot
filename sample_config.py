@@ -30,7 +30,7 @@ class Config(object):
     DB_URI = os.environ.get("DATABASE_URL", "")
 
     # Group / channel Id: Members to which inline query answered
-    SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", ""))
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "")
 
     # List of admin user ids for special functions(Storing as an array)
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
