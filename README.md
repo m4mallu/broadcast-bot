@@ -24,6 +24,12 @@ A Telegram bot to send messages and medias to the subscribers directly through b
 * `DB_URI` Create a postgre database if you deploy the locally | In heroku do nothing  
 * `SUPPORT_CHAT` Public group / channel username of the support chat
 
+## @BotFather Commands
+```
+send - send posts to the subscribers (Admin Only)
+subscribers - view subscribers count (Admin Only)
+```
+
 ## Deploy Locally:
 
 Create a `config.py` with the above variables (Refer sample_config.py)
