@@ -1,0 +1,8 @@
+# --- Libraries Used:
+# --- For-Bot-Working --------- #
+pyrogram
+TgCrypto
+# --- For-Database ------------ #
+sqlalchemy~=1.3.23
+psycopg2-binary
+feedparser
