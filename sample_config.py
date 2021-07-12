@@ -29,7 +29,7 @@ class Config(object):
     # Database URI
     DB_URI = os.environ.get("DATABASE_URL", "")
 
-    # Group / channel Id: Members to which inline query answered
+    # Group / channel username of the support chat
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "")
 
     # List of admin user ids for special functions(Storing as an array)
