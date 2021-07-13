@@ -22,16 +22,16 @@ else:
 
 
 # ------------------------------- Start Message --------------------------------- #
-@Client.on_message(filters.private & filters.command('start'))
-async def start_bot(bot, m: Message):
-    id = m.from_user.id
-    user_name = '@' + m.from_user.username if m.from_user.username else None
-    await add_user(id, user_name)
-    await m.reply_text(Presets.WELCOME_MESSAGE.format(m.from_user.mention(),
-                                                      Config.SUPPORT_CHAT if Config.SUPPORT_CHAT else "_______"),
-                       parse_mode='html',
-                       disable_web_page_preview=True
-                       )
+#@Client.on_message(filters.private & filters.command('start'))
+#async def start_bot(bot, m: Message):
+    #id = m.from_user.id
+    #user_name = '@' + m.from_user.username if m.from_user.username else None
+    #await add_user(id, user_name)
+    #await m.reply_text(Presets.WELCOME_MESSAGE.format(m.from_user.mention(),
+                                                      #Config.SUPPORT_CHAT if Config.SUPPORT_CHAT else "_______"),
+                       #parse_mode='html',
+                       #disable_web_page_preview=True
+                       #)
 
 
 # ------------------------------- View Subscribers --------------------------------- #
