@@ -63,8 +63,8 @@ async def send_text(bot, m: Message):
                     chat_id=chat_id,
                     from_chat_id=m.chat.id,
                     message_id=m.reply_to_message.message_id,
-                    caption=m.caption,
-                    reply_markup=m.reply_markup
+                    caption=m.reply_to_message.caption,
+                    reply_markup=m.reply_to_message.reply_markup
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
